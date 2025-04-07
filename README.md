@@ -15,7 +15,11 @@ Users can:
 
 ![Search Example](./public/SearchExampleScreenshot.png)
 
-## Setup
+## Setup Local Env
+
+Make sure to create a `.env` file and copy the contents from `.env.example`
+
+## Install dependencies
 
 Make sure to install dependencies:
 
