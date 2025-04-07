@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A simple Nuxt 3 |+ Typescript app for browsing restaurant listings based on postcode, cuisine types and restaurant name search.
+A simple Nuxt 3 + Typescript app for browsing restaurant listings based on postcode, cuisine types and restaurant name search.
 
 Users can:
 
