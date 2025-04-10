@@ -18,7 +18,6 @@ import { useRestaurantsStore } from "~/stores/useRestaurantsStore";
 
 const restaurantsStore = useRestaurantsStore();
 const { filteredRestaurants, cuisines } = storeToRefs(restaurantsStore);
-restaurantsStore.fetchRestaurants();
 </script>
 
 <style lang="scss" scope>
