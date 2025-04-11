@@ -5,7 +5,7 @@ export const useRestaurantsLookup = () => {
 
   const fetchRawData = async (postcode: string) => {
     try {
-      const response = await useFetch<RestaurantApiResponse>(
+      const response = await $fetch<RestaurantApiResponse>(
         `/api/restaurants/bypostcode/${postcode}`,
         {
           headers: {
@@ -15,8 +15,8 @@ export const useRestaurantsLookup = () => {
         }
       );
 
-      if (!response.data.value) throw new Error("No data recieved");
-      return response.data.value;
+      if (!response) throw new Error("No data recieved");
+      return response;
     } catch (error) {
       console.error("Failed to fetch restaurant data", error);
       return null;

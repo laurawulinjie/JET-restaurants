@@ -1,6 +1,6 @@
 describe("useRestaurantsLookup", () => {
   describe("with fetchRawData", () => {
-    it.todo("should call useFetch with correct url and headers");
+    it.todo("should call $fetch with correct url and headers");
   });
 
   describe("with getRestaurants", () => {
