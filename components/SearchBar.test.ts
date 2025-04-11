@@ -4,4 +4,5 @@ describe("SearchBar", () => {
   it.todo("should update searchInput when typing");
   it.todo("should searchQuery state on input");
   it.todo("should trim whitespace from search input");
+  it.todo("should reset searchInput when the searchQuery state has been reset");
 });

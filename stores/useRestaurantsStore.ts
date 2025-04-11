@@ -8,7 +8,7 @@ export const useRestaurantsStore = defineStore("restaurants", () => {
   const restaurants = ref<Restaurant[]>([]);
   const cuisines = ref<string[]>([]);
   const selectedCuisines = ref<string[]>([]);
-  const searchQuery = ref<string>();
+  const searchQuery = ref<string>("");
   const postcode = ref<string>("");
 
   const { fetchRawData, getRestaurants, getCuisineSets } =

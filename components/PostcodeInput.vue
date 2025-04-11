@@ -18,6 +18,8 @@ const updatePostcode = async () => {
   if (postcodeInput.value.trim()) {
     restaurantsStore.postcode = postcodeInput.value.trim();
     await restaurantsStore.fetchRestaurants();
+    restaurantsStore.selectedCuisines = [];
+    restaurantsStore.searchQuery = "";
   }
 };
 </script>

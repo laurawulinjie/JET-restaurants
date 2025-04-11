@@ -17,6 +17,15 @@ const { restaurants } = storeToRefs(restaurantsStore);
 const handleSearch = () => {
   restaurantsStore.searchQuery = searchInput.value.trim();
 };
+
+watch(
+  () => restaurantsStore.searchQuery,
+  (newQuery) => {
+    if (newQuery === "") {
+      searchInput.value = "";
+    }
+  }
+);
 </script>
 
 <style lang="scss" scope>
